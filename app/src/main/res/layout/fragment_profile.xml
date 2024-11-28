@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/userprofile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/userGo"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:src="@drawable/new_logo"
+        />
+
+    <Button
+        android:id="@+id/userProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="Show/Update Profile"
+        android:textSize="14dp" />
+
+</RelativeLayout>

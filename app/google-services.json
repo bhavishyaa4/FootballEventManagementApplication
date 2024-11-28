@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "833057124271",
+    "project_id": "football-management-syst-42255",
+    "storage_bucket": "football-management-syst-42255.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833057124271:android:6d69e6cb3c90b750e1c95a",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4u5sO-8UB-1ThOD2MIP6638ilLcNLj3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+        <fragment
+            android:id="@+id/firstDisplayFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_weight="1"
+            android:name="com.example.firebase.AddTournamentFragment" />
+
+        <fragment
+            android:id="@+id/secondDisplayFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:name="com.example.firebase.EditTournamentFragment"/>
+
+        <fragment
+            android:id="@+id/thirdDisplayFragment"
+            android:name="com.example.firebase.ListTournamentFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>

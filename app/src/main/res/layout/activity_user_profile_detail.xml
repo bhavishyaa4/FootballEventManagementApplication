@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <fragment
+        android:id="@+id/userprofileFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:name="com.example.firebase.ProfileFragment"/>
+
+    <fragment
+        android:id="@+id/registeredTournamentFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:name="com.example.firebase.ViewRegisteredTournamentFragment"/>
+
+
+</LinearLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/bold"
+        android:text="Update Tournament"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="256dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/new_logo" />
+
+    <EditText
+        android:id="@+id/editTournamentName"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="120dp"
+        android:background="@color/white"
+        android:fontFamily="@font/regular"
+        android:hint="Tournament Name"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTournamentAddress"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:fontFamily="@font/regular"
+        android:hint="Address"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTournamentName" />
+
+    <EditText
+        android:id="@+id/editTournamentContact"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:fontFamily="@font/regular"
+        android:hint="Contact"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTournamentAddress" />
+
+    <EditText
+        android:id="@+id/editTournamentEmail"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:fontFamily="@font/regular"
+        android:hint="Email"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTournamentContact" />
+
+    <EditText
+        android:id="@+id/editTournamentPrice"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:fontFamily="@font/regular"
+        android:hint="Price"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTournamentEmail" />
+
+    <EditText
+        android:id="@+id/editTournamentEndDate"
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:fontFamily="@font/regular"
+        android:hint="End Date"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTournamentPrice" />
+
+    <ImageView
+        android:id="@+id/editTournamentImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:contentDescription="Tournament Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTournamentEndDate" />
+
+    <Button
+        android:id="@+id/changeImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/bold"
+        android:text="Change Image"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTournamentEndDate" />
+
+    <Button
+        android:id="@+id/saveEditButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/bold"
+        android:text="Save Changes"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changeImageButton" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/bold"
+        android:text="Name:"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bold"
+        android:text="Address:"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/bold"
+        android:text="Contact:"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bold"
+        android:text="Email:"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bold"
+        android:text="Price:"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/bold"
+        android:text="End-Date:"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView56" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

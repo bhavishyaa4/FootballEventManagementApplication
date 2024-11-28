@@ -1,0 +1,80 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="165dp"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/gradient">
+
+    <ImageView
+        android:id="@+id/tournamentImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/chelsea" />
+
+    <TextView
+        android:id="@+id/tournamentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="Tournament Name"
+        android:fontFamily="@font/medium"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tournamentAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address: Location"
+        android:fontFamily="@font/regular"
+        android:textSize="14sp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tournamentContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact: 9800000000"
+        android:textSize="14sp"
+        android:fontFamily="@font/regular"
+        android:textColor="@android:color/black" />
+    <TextView
+        android:id="@+id/tournamentEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email: bhavishya@gmail.com"
+        android:textSize="14sp"
+        android:fontFamily="@font/regular"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tournamentPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price: 1500/- Only"
+        android:fontFamily="@font/regular"
+        android:textSize="14sp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tournamentEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="End Date: 2081/05/12"
+        android:fontFamily="@font/regular"
+        android:textSize="14sp"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/regbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:fontFamily="@font/bold"
+        android:backgroundTint="@color/black"
+        />
+
+</LinearLayout>

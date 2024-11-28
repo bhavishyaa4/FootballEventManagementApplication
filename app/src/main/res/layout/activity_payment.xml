@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+
+    <!-- ImageView for logo -->
+
+    <!-- LinearLayout to divide into two sections -->
+    <ImageView
+        android:id="@+id/paymentLogo"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008"
+        app:srcCompat="@drawable/new_logo" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/paymentLogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/paypal"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/payPalBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay with PayPal"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/bold"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/cashpal"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/cashBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/bold"
+                android:text="Pay with Cash"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

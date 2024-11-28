@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/tournamentImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="80dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tournamentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/medium"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/tournamentImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tournamentAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/medium"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/tournamentName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tournamentContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/medium"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/tournamentAddress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tournamentPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/medium"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/tournamentContact"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tournamentEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/medium"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/tournamentPrice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Add input fields for registration details -->
+
+        <EditText
+            android:id="@+id/teamName"
+            android:layout_width="220dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/white"
+            android:fontFamily="@font/semibold"
+            android:hint="Team Name"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.907"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tournamentEndDate" />
+
+        <EditText
+            android:id="@+id/teamAddress"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:fontFamily="@font/semibold"
+            android:hint="Team Address"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.919"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/teamName" />
+
+        <EditText
+            android:id="@+id/coachName"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:fontFamily="@font/semibold"
+            android:hint="Coach Name"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.919"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/teamAddress" />
+
+        <EditText
+            android:id="@+id/contactNumber"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:fontFamily="@font/semibold"
+            android:hint="Contact Number"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.919"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/coachName" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:fontFamily="@font/semibold"
+            android:hint="Email"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.919"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/contactNumber"
+            app:layout_constraintVertical_bias="0.069" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="@font/bold"
+            android:text="Next Page"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/email" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="444dp"
+            android:fontFamily="@font/bold"
+            android:text="Team-Name:"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/bold"
+            android:text="Coach-Name:"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.096"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/bold"
+            android:text="Email:"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.225"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="67dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/bold"
+            android:text="Address:"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.183"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/bold"
+            android:text="Number:"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.19"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+        <ImageView
+            android:id="@+id/registerLogo"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="716dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.037"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/new_logo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

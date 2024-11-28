@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/teamNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team Name: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/teamIdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team ID: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/contactNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Number: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/teamAddressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team Address: "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/playerDetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player Details: "
+        android:textSize="18sp" />
+</LinearLayout>
