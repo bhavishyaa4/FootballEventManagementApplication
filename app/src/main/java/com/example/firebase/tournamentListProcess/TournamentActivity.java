@@ -176,6 +176,8 @@ public class TournamentActivity extends AppCompatActivity {
                     }
                 });
     }
+    //Hello This is just testing you can erase it later.
+
     private void filterTournaments(String query) {
         List<Tournament> filteredList = new ArrayList<>();
         String lowerQuery = query.toLowerCase();
@@ -254,7 +256,7 @@ public class TournamentActivity extends AppCompatActivity {
 
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i - 1; j++) {
-                boolean condition = ascending`
+                boolean condition = ascending
                         ? sortedList.get(j).getPrice() > sortedList.get(j + 1).getPrice()
                         : sortedList.get(j).getPrice() < sortedList.get(j + 1).getPrice();
 
